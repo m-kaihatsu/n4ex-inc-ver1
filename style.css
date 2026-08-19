@@ -1,0 +1,82 @@
+:root{--blue:#142a88;--ink:#101010;--line:#999;--muted:#555;--bg:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;font-size:15px;line-height:1.65}
+a{color:#6f1584;text-decoration:underline;text-underline-offset:2px}
+a:visited{color:#6f1584}
+a:hover{color:#0d278a}
+hr{border:0;border-top:1px solid var(--line);margin:0}
+.masthead{text-align:center;padding:14px 20px 12px;color:var(--blue)}
+.logo-link{display:inline-block;text-decoration:none}
+.logo-link img{display:block;width:270px;max-width:64vw;height:auto;margin:0 auto 2px}
+.tagline,.official{margin:0;font-weight:700;color:var(--blue)}
+.tagline{font-size:13px;letter-spacing:.02em}
+.official{font-size:16px;line-height:1.25}
+main{width:100%}
+.link-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;max-width:1520px;margin:0 auto;padding:30px 7vw 28px}
+.column{display:flex;flex-direction:column;gap:28px}
+.column a{position:relative;padding-left:20px;font-size:16px}
+.column a::before{content:"•";position:absolute;left:0;color:var(--blue);text-decoration:none}
+.content-section{max-width:1520px;margin:0 auto;padding:32px 7vw 34px}
+.content-section.compact{padding-bottom:38px}
+h1,h2{font-size:18px;color:var(--blue);margin:0 0 16px;font-weight:700}
+p{margin:0 0 12px;max-width:1050px}
+.signature{margin-top:24px}
+.plain-list{margin:0}
+.plain-list>div{display:grid;grid-template-columns:280px 1fr;gap:34px;padding:16px 0;border-top:1px dotted #bbb}
+.plain-list>div:last-child{border-bottom:1px dotted #bbb}
+.plain-list dt{font-weight:700;color:var(--blue)}
+.plain-list dd{margin:0;max-width:900px}
+.note{margin-top:14px;font-size:12px;color:var(--muted)}
+.company-table{border-collapse:collapse;width:min(900px,100%);font-size:14px}
+.company-table th,.company-table td{text-align:left;vertical-align:top;border-top:1px solid #c8c8c8;padding:12px 10px}
+.company-table tr:last-child th,.company-table tr:last-child td{border-bottom:1px solid #c8c8c8}
+.company-table th{width:180px;color:var(--blue);font-weight:700;padding-left:0}
+.company-table td{padding-right:0}
+.mail{font-size:16px}
+footer{padding:20px 0 34px;font-size:12px;color:var(--blue)}
+footer p{max-width:none;margin:0 0 12px;padding:0 0 0 0}
+footer{padding-left:0}
+footer p{padding-left:0}
+footer{width:100%}
+footer p{margin-left:0}
+footer p,footer a{font-size:12px}
+footer p{padding-left:0}
+footer{padding-left:0}
+footer p{margin-left:0}
+footer>*{margin-left:0}
+footer p{padding-left:0}
+footer{padding-left:0}
+footer p{padding-left:0}
+footer p{margin-left:0}
+footer{padding:18px 0 30px}
+footer p{padding-left:0;margin-left:0}
+footer p{width:100%;padding-left:0}
+footer p{padding-left:0}
+footer p{margin-left:0}
+footer p{padding-inline-start:0}
+footer p{padding-left:0}
+footer p{margin-left:0}
+footer p{padding-left:0}
+footer p{padding-left:0}
+footer p{margin-left:0}
+footer p{padding-left:0}
+footer p{padding-left:0}
+footer p{margin-left:0}
+footer p{padding-left:0}
+footer p{padding-left:0}
+footer p{margin-left:0}
+footer p{padding-left:7vw;padding-right:7vw}
+@media(max-width:760px){
+  body{font-size:14px}
+  .masthead{padding-top:18px}
+  .logo-link img{width:210px;max-width:72vw}
+  .tagline{font-size:11px}.official{font-size:14px}
+  .link-grid{grid-template-columns:1fr;gap:24px;padding:24px 24px}
+  .column{gap:20px}
+  .column a{font-size:15px}
+  .content-section{padding:26px 24px 28px}
+  .plain-list>div{grid-template-columns:1fr;gap:7px}
+  .company-table th{width:110px}
+  footer p{padding-left:24px;padding-right:24px}
+}
